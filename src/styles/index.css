@@ -9,3 +9,85 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body {
+    background: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.counter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: #000;
+    margin: 50px auto 20px;
+    max-width: fit-content;
+    border-radius: 10px;
+}
+
+.clock-icon, .digit {
+    background: #101010;
+    color: white;
+    padding: 20px;
+    font-size: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.clock-icon {
+    font-size: 40px;
+}
+
+.controls-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.control-btn {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background: #2a2a2a;
+    transform: translateY(-2px);
+}
+
+.control-btn i {
+    font-size: 14px;
+}
+
+.target-time {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    background: #1a1a1a;
+    border-radius: 5px;
+    margin-top: 10px;
+}
